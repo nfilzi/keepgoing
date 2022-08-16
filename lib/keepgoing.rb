@@ -31,7 +31,7 @@ module Keepgoing
       clearing :on
       interactor :off
       guard "keepgoing", file: "#{script_file}" do
-        watch("#{script_file}")
+        watch(/(.*).rb/)
       end
     GUARDFILE
   end
